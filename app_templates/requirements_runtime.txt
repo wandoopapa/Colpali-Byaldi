@@ -1,0 +1,7 @@
+pypdf
+pypdfium2
+pillow
+requests
+torch
+transformers
+byaldi
