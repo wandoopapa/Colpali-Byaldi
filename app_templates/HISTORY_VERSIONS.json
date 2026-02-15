@@ -1,0 +1,8 @@
+{
+  "versions": [
+    {
+      "version": "v1.0.0",
+      "details": "[설치 GUI]\n- 설치 폴더를 사용자가 선택하도록 구현했습니다.\n- 폴더 생성, 파일 복사, 라이브러리 설치, 완료 처리 단계를 원클릭으로 수행하도록 구현했습니다.\n- 전체 진행률/현재 항목 진행률 Progress Bar를 분리하여 표시했습니다.\n\n[실행 GUI]\n- 원본 폴더 선택, PDF 선택, 외부 LLM API 설정 입력 기능을 추가했습니다.\n- PDF 처리 시 전체 진행률/현재 항목 진행률을 분리 표시하도록 구성했습니다.\n- 인덱싱 결과를 rag_chunks.jsonl, rag_index_manifest.json으로 저장하도록 구현했습니다.\n\n[아키텍처]\n- 역할 분리를 위해 run_gui.pyw, pipeline.py, config_manager.py, history_manager.py, ui_components.py로 분할했습니다.\n- 시스템 개발 역사를 GUI 트리에서 버전별 폴더형식으로 열람할 수 있도록 구현했습니다."
+    }
+  ]
+}
