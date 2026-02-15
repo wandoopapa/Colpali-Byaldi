@@ -1,0 +1,14 @@
+{
+  "versions": [
+    {
+      "version": "v1.1.0",
+      "details": "[리뷰 피드백 반영]\n- 원본 폴더 경로와 PDF 파일 선택의 중복을 제거했습니다. 이제 '원본 폴더' 하나만 지정하면 폴더 내 PDF를 자동 인식합니다.\n- 인덱스 이름 입력 UI를 제거하고, ColPali+Byaldi 구조를 나타내는 고정 인덱스 타입(colpali_byaldi)로 저장되게 변경했습니다.\n- 인덱싱 완료 후 어디서 대화하는지 명확하지 않았던 문제를 해결하기 위해 'VLM 대화' 전용 탭을 추가했습니다.\n\n[인덱싱/검색]\n- pipeline.py에 source_folder 기반 PDF 수집 함수(collect_pdf_files)를 추가했습니다.\n- build_colpali_byaldi_index()로 함수명을 변경하고, 산출물 manifest에 index_type/retrieval_mode/recommended_stack을 명시했습니다.\n- load_chunks(), retrieve_context()를 추가해 질문 시 인덱스 산출물에서 문맥을 검색하도록 구성했습니다.\n\n[VLM 대화]\n- llm_client.py를 추가하여 OpenAI 호환 API(/chat/completions) 호출을 모듈화했습니다.\n- 실행 GUI에서 질문 입력 -> 문맥 검색 -> 외부 VLM 호출 -> 답변 표시의 전체 흐름을 GUI 내에서 완료할 수 있게 구현했습니다.\n\n[호환성/구조]\n- 기존의 영어 코드 + 한국어 GUI 문구 원칙을 유지했습니다.\n- 역할 분리 구조를 유지하면서 llm_client.py를 추가해 파트 분리를 강화했습니다.",
+      "date": "2026-02-11"
+    },
+    {
+      "version": "v1.0.0",
+      "details": "[초기 버전]\n- 설치 GUI 및 실행 GUI 기본 구조를 구성했습니다.\n- PDF 텍스트 추출 기반 인덱싱과 개발 이력 탭을 추가했습니다.",
+      "date": "2026-02-10"
+    }
+  ]
+}
