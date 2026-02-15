@@ -1,0 +1,34 @@
+{
+  "versions": [
+    {
+      "version": "v1.4.0",
+      "details": "[리뷰 피드백 반영 5차]\n- Google AI Studio API 사용을 위해 VLM 탭에 제공자 프리셋을 추가했습니다.\n- Google AI Studio(Gemini OpenAI 호환) 프리셋을 적용하면 base URL을 https://generativelanguage.googleapis.com/v1beta/openai 로 자동 설정합니다.\n- OpenAI/OpenRouter/Groq/Together/DeepSeek/xAI/커스텀 프리셋을 함께 제공해 외부 API 구성을 빠르게 적용할 수 있게 했습니다.\n- 현재 입력값과 프리셋 매칭을 동기화하여 사용 중인 제공자를 쉽게 파악할 수 있도록 개선했습니다.",
+      "date": "2026-02-11"
+    },
+    {
+      "version": "v1.3.1",
+      "details": "[리뷰 피드백 반영 4차]\n- VLM 탭의 API Base URL 의미를 명확히 하기 위해 도움말 라벨(예시 URL 포함)을 추가했습니다.\n- API Base URL 입력을 선택사항으로 변경했고, 비워두면 OpenAI 기본값(https://api.openai.com/v1)을 자동 사용하도록 개선했습니다.\n- 연결 상태 확인/질문 전송 유효성 검사에서 Base URL 필수 조건을 제거해 사용자 혼란을 줄였습니다.",
+      "date": "2026-02-11"
+    },
+    {
+      "version": "v1.3.0",
+      "details": "[리뷰 피드백 반영 3차]\n- ColPali+Byaldi가 이미지 기반 RAG라는 점을 반영하여 인덱싱 시 PDF 페이지를 PNG 이미지로 생성하도록 개선했습니다.\n- VLM 대화 탭에 '검색된 페이지 이미지 미리보기' 영역을 추가해, 검색 근거 이미지를 화면에서 바로 확인할 수 있게 했습니다.\n- 외부 API 입력 후 실제 호출 전 검증할 수 있도록 '연결 상태 확인' 기능(/models) 버튼을 추가했습니다.\n\n[멀티모달 파이프라인 명확화]\n- manifest에 index_modality=image_first, page_image_dir를 기록하도록 확장했습니다.\n- retrieve_context가 텍스트 문맥뿐 아니라 이미지 경로 목록도 함께 반환하도록 변경했습니다.\n- 인덱싱/검색/생성 단계의 역할 분리를 유지하면서 멀티모달 근거 표시를 강화했습니다.",
+      "date": "2026-02-11"
+    },
+    {
+      "version": "v1.2.0",
+      "details": "[리뷰 피드백 반영 2차]\n- 외부 API Key/Base/모델 입력 UI를 인덱싱 탭에서 제거하고, VLM 대화 탭으로 이동했습니다.\n- 인덱싱 탭은 원본 폴더 선택 + 인덱싱 실행에만 집중하도록 역할을 분리했습니다.\n- '시스템 구성 제안 보기' 버튼을 추가하여 ColPali+Byaldi+외부 VLM의 권장 파이프라인을 앱 내부에서 안내합니다.",
+      "date": "2026-02-11"
+    },
+    {
+      "version": "v1.1.0",
+      "details": "[리뷰 피드백 반영]\n- 원본 폴더 경로와 PDF 파일 선택의 중복을 제거했습니다. 이제 '원본 폴더' 하나만 지정하면 폴더 내 PDF를 자동 인식합니다.\n- 인덱스 이름 입력 UI를 제거하고, ColPali+Byaldi 구조를 나타내는 고정 인덱스 타입(colpali_byaldi)로 저장되게 변경했습니다.\n- 인덱싱 완료 후 어디서 대화하는지 명확하지 않았던 문제를 해결하기 위해 'VLM 대화' 전용 탭을 추가했습니다.",
+      "date": "2026-02-11"
+    },
+    {
+      "version": "v1.0.0",
+      "details": "[초기 버전]\n- 설치 GUI 및 실행 GUI 기본 구조를 구성했습니다.\n- PDF 텍스트 추출 기반 인덱싱과 개발 이력 탭을 추가했습니다.",
+      "date": "2026-02-10"
+    }
+  ]
+}
